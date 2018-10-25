@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Bernina;
+    src: url("fonts/BerninaSans-Web-CondensedBold.woff2");
+}
+
+@font-face {
+    font-family: GothamHTF;
+    src: url("fonts/GothamHTF-Book.woff2");
+}
+
+.div_background {
+    text-align: end;
+}
+
+.div_background > p {
+    z-index: 1;
+    position: absolute;
+    background-color: #810426;
+    color: white;
+    font-family: GothamHTF;
+}
+
+.background {
+    z-index: auto;
+    width: 100%;
+}
+
+.div_description {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #F7FFFF;
+}
+
+.first_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rdv {
+    color: black;
+    font-family: GothamHTF;
+}
+
+.desciption {
+    text-align: center;
+}
+
+h1 {
+    font-family: Bernina;
+}
+
+.desciption > p {
+    font-family: Bernina;
+}
+
+.second_flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 480px)
+{
+    .cryolipolyse {
+        order: 2;
+    }
+    .cryotherapie {
+        order: 3;
+    }
+}
+
+.second_flex > div {
+    text-align: center;
+}
+
+.second_flex > div > img {
+    overflow:hidden;
+    border-radius:70px;
+    width:139.5px;
+    height:139.5px;
+}
+
+.second_flex > div > p {
+    font-family: GothamHTF;
+}
+
