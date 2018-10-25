@@ -9,15 +9,24 @@
 }
 
 .div_background {
-    text-align: end;
+    position: relative;
 }
 
-.div_background > p {
+.promotion {
     z-index: 1;
     position: absolute;
     background-color: #810426;
     color: white;
+    width: 20%;
     font-family: GothamHTF;
+    transform: rotate(0.1turn);
+    right: 4%;
+    top: 15%;
+    text-align: center;
+}
+
+.petit {
+    font-size: x-small;
 }
 
 .background {
@@ -59,6 +68,15 @@ h1 {
     flex-wrap: wrap;
 }
 
+@media (max-width: 768px)
+{
+    .promotion {
+        width : 35%;
+        top: 20%;
+        right: 5%;
+    }
+}
+
 @media (max-width: 480px)
 {
     .cryolipolyse {
@@ -66,6 +84,11 @@ h1 {
     }
     .cryotherapie {
         order: 3;
+    }
+    .promotion {
+        width : 50%;
+        right: 8%;
+        top: 25%;
     }
 }
 
@@ -75,7 +98,7 @@ h1 {
 
 .second_flex > div > img {
     overflow:hidden;
-    border-radius:70px;
+    border-radius:50%;
     width:139.5px;
     height:139.5px;
 }
